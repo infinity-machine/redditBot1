@@ -6,12 +6,12 @@ load_dotenv()
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
-def respondToComment(comment):
+def gptResponse(input):
     completion = openai.Completion.create(
         model="text-davinci-003",
-        prompt=comment,
-        max_tokens=100,
-        temperature=0
+        prompt=input,
+        max_tokens=200,
+        temperature=1
     )
-    response = completion.choices[0].text.strip('\n\n')
-    return response
+    output = completion.choices[0].text.strip('\n\n')
+    return output
