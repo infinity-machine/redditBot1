@@ -1,13 +1,13 @@
 import os
 import praw
 # import random
-import pprint
+# import pprint
 
 from dotenv import load_dotenv
 load_dotenv()
 
-from gpt import respondToComment
-from utils import getProperties
+# from gpt import respondToComment
+# from utils import getProperties
 
 reddit = praw.Reddit(
     client_id=os.getenv('CLIENT_ID'),
@@ -19,8 +19,12 @@ reddit = praw.Reddit(
 
 subreddit = reddit.subreddit('explainlikeimfive')
 
-# for post in subreddit.new(limit=1):
-#     pprint.pprint(getProperties(post))
+
+# GRAB A "RANDOM" POST FROM ELIF
+# "RAMDOM" = ONE RANDOMLY SELECTED *RECENT* POST THAT *DOES NOT* HAVE SELFTEXT PROPERTY
+
+# GENERATE GPT RESPONSE TO POST AND REPLY WITH GENERATED RESPONSE
+
 
 
 # for post in subreddit.new(limit=1):
@@ -29,7 +33,6 @@ subreddit = reddit.subreddit('explainlikeimfive')
 #     print("Text: ", post.selftext)
 #     print("Score: ", post.score)
 #     print("---post---\n")
-#     post.reply(my_response)
     
 #     for comment in post.comments:
 #         if hasattr(comment, 'body'):
@@ -37,11 +40,10 @@ subreddit = reddit.subreddit('explainlikeimfive')
 #             print(comment.body)
 #             print("---comment---\n")
 
-# for post in subreddit.new(limit=1):
+# for post in subreddit.new(limit=5):
 #     print(post.title)
-#     post.reply(respondToComment(post.title))
 
-
+# print(getProperties(subreddit.new()))
 
 
 
