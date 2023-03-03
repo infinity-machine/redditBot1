@@ -1,8 +1,8 @@
-import praw
-import random
 import os
-from dotenv import load_dotenv
+import praw
+# import random
 
+from dotenv import load_dotenv
 load_dotenv()
 
 reddit = praw.Reddit(
@@ -30,3 +30,6 @@ for post in subreddit.new(limit=1):
             print("---comment---\n")
             print(comment.body)
             print("---comment---\n")
+
+
+
