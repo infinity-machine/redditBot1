@@ -1,0 +1,36 @@
+SETTING UP DJANGO
+
+1. pipenv install django
+    this creates a new venv and installs django in it.
+    this also creates Pipfile and Pipfile.lock
+    venv STILL needs to be activated...
+    we want to use the python interpreter in the venv we created, not the global environment.
+
+2 pipenv shell
+    activates venv, launches subshell
+
+(
+    django-admin 
+        gives list of django-admin commands
+)
+
+3. (
+        django-admin startproject YOUR_PROJECT_NAME (creates new django project directory in current directory)
+        OR
+        django startproject YOUR_PROJECT_NAME . (creates django project, treats current directory as core project directory)
+    )
+
+(
+    manage.py is a wrapper around django-admin. at this point use manage.py as a command instead, because it takes into account the settings of this project
+)
+
+4. python manage.py runserver (PORT?) 
+    at this point the server will run, showing the boiler-plate django response
+
+
+5. pipenv --venv to get the path to our venv
+    THEN open vscode command palate and select python select interpreter, copy paste it with /bin/python the path to the venv
+
+(
+    what i believe this does is configure vs code with the venv. after this step, if you kill the terminal and open a new one in the directory, it automatically activates the venv.
+)
