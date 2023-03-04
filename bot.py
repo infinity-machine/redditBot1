@@ -31,16 +31,26 @@ def grabPost(subreddit_string):
         if post.selftext == '':
             return post
 
-def bot():
+def reggieFranzen():
     post = grabPost('explainlikeimfive')
     print(post.title)
     gpt_response = gptResponse(post.title)
     print(gpt_response)
     # post.reply(gpt_response)
 
-while True:
-    bot()
-    time.sleep(3600)
+
+
+def betteQuigley():
+    print('chello')
+
+
+
+
+
+
+# while True:
+#     reggieFranzen()
+#     time.sleep(3600)
 
 
 
