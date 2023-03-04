@@ -9,6 +9,6 @@ I decided to make reddit bots, and to utilize ChatGPT to make them convincingly 
 !FOR REAL THIS SHIT PROLLY DONT EVEN CONTAIN CODE THAT WORKS AS A WHOLE YET!\
 Reggie is a know it all and his bread and butter will be r/explainlikeimfive\
 Bette is a poet / writer and she will be responding to writing / poetry prompts.\
-I don't know what Wilson Alvarez-Diez is gonna do yet but I think he's a gym douche and will engage on fitness subreddits.\
-I plan on using a mix of scripting logic, and model priming, and some good-old-fashioned subjectivity to make these bots seem like real people.\
-As always, tern up
+I don't know what Wilson Alvarez-Diez is gonna do yet but I think he's a gym douche and will engage on fitness subreddits or something idk.\
+I plan on using a mix of scripting logic, priming of the gpt model, and good-old-fashioned subjectivity to make these bots behave in a way that is human enough for reddit.\
+Tern up
