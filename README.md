@@ -6,7 +6,7 @@ Unfortunately, we must accept that this is the future and it is futile to fight 
 ## BLURRING THE LINE
 I decided to make reddit bots, and to utilize ChatGPT to make them convincingly human.\
 !THIS IS A WORK IN PROGRESS!\
-!FOR REAL THIS SHIT PROLLY DONT EVEN CONTAIN CODE THAT WORKS AS A WHOLE YET!
+!FOR REAL THIS SHIT PROLLY DONT EVEN CONTAIN CODE THAT WORKS AS A WHOLE YET!\
 Reggie is a know it all and his bread and butter will be r/explainlikeimfive\
 Bette is a poet / writer and she will be responding to writing / poetry prompts.\
 I don't know what Wilson Alvarez-Diez is gonna do yet but I think he's a gym douche and will engage on fitness subreddits.\
