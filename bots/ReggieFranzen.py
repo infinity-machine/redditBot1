@@ -16,6 +16,17 @@ reddit_rf = praw.Reddit(
     password=os.getenv('RF_PASSWORD')
 )
 
+def respondToELIFPost():
+    ELIF = reddit_rf.subreddit('explainlikeimfive')
+    for post in ELIF.new(limit=10):
+        # REPLY TO FIRST NEW POST THAT DOESN'T HAVE A SELFTEXT PROPERTY AND BREAK LOOP
+        if (post.selftext == ''):
+            rf_response = gptResponse(post.title)
+            # post.reply(rf_response)
+            print(f'REGGIE FRANZEN HAS RESPONDED TO {post.title}:')
+            print(f'"{rf_response}" -- R.F.')
+            return
+
 def likeXSubredditPosts(subreddits_array, number_of):
     selected = random.sample(subreddits_array, k=number_of)
     for subreddit in selected:
@@ -23,9 +34,8 @@ def likeXSubredditPosts(subreddits_array, number_of):
         for post in subreddit.new(limit=1):
             # post.upvote()
             print(f'REGGIE FRANZEN HAS LIKED "{post.title}"')
-            print('...')
             time.sleep(30)
-
+        print('...')
 def getSubreddits():
     list = []
     for this_subreddit in reddit_rf.user.subreddits(limit=None):
@@ -40,8 +50,9 @@ def getSubreddits():
 def ReggieFranzen():
     subreddits = getSubreddits()
     likeXSubredditPosts(subreddits, 5)
-    # time.sleep(300)
+    time.sleep(300)
     ## ENGAGE WITH ELIF
+    respondToELIFPost()
     # time.sleep(300)
     ## ENGAGE WITH ANOTHER SUB
     # time.sleep(300)
