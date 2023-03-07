@@ -19,7 +19,7 @@ reddit_rf = praw.Reddit(
 )
 
 def likeXSubredditPosts(subreddits_array, number_of):
-    selected = random.choices(subreddits_array, k=number_of)
+    selected = random.sample(subreddits_array, k=number_of)
     for subreddit in selected:
         print(f'IN SUBREDDIT "{subreddit}"')
         for post in subreddit.new(limit=1):
