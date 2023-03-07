@@ -21,7 +21,7 @@ def chatPrompt():
     # SET UP MESSAGE ARRAY, PRIME GPT
     messages = [{
         "role": "system",
-        "content": "You are a helpful assistant!."
+        "content": "You are a helpful assistant!"
     },
     {
         "role": "user",
