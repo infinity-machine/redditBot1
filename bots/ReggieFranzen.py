@@ -56,7 +56,7 @@ def appendToMessageList(list, role, query):
 def queryReggie(query, msg_list):
     msg_list = appendToMessageList(msg_list, 'user', query)
     chat_completion = openai.ChatCompletion.create(
-        model='gpt-3.5-turbo', messages=msg_list
+        model='gpt-3.5-turbo', max_tokens=200, messages=msg_list
     )
     gpt_response = chat_completion.choices[0].message.content
     msg_list = appendToMessageList(msg_list, 'assistant', gpt_response)

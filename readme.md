@@ -1,1 +1,1 @@
-this is where my friend Reggie lives
+this is where my friend [Reggie](https://www.reddit.com/user/reggiefranzen13) lives
